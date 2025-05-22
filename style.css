@@ -179,15 +179,17 @@ a {
     align-items: center;
     margin-left: 24px;
   }
+  .tags {
+    display: flex;
+  }
   .tag {
     margin: 8px 0px;
     font-weight: 500;
     font-size: 24px;
     color: #0027D5;
-    display: flex;
-    align-items: center;
   }
   .new {
+    display: inline-block;
     width: 64px;
     padding: 6px 12px;
     margin-left: 8px;
