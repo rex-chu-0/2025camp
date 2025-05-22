@@ -148,7 +148,6 @@ a {
 
     .nav {
         height: 90px;
-        background: #FBFBFB;
 
         & ul {
             display: flex;
@@ -170,11 +169,12 @@ a {
     .banner {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 56px;
+        margin-bottom: 55px;
         border: 1px solid #6C757D;
 
         &L {
             width: 50%;
+            display: flex;
 
             img {
                 width: 100%;
@@ -215,7 +215,8 @@ a {
 
     .content {
         margin: auto;
-        width: 636px;
+        max-width: 636px;
+
     }
 
     .seg {
@@ -240,10 +241,16 @@ a {
         ol {
             margin-bottom: 8px;
             list-style-type: decimal;
+            list-style-position: inside;
         }
 
         ul {
             list-style: disc;
+            list-style-position: inside;
+        }
+
+        img {
+            width: 100%;
         }
 
     }
@@ -257,16 +264,58 @@ a {
     .changePage {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 80px;
 
         li {
             padding: 8px 16px;
             border: 1px solid #000;
             border-radius: 40px;
             color: #000;
+
+            &:hover {
+                color: #FFF;
+                background-color: #000;
+            }
         }
 
     }
+
+    .footer {
+        max-width: 1920px;
+        border: 1px solid #6C757D;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0px;
+    }
+
+    .mail {
+        font-size: 32px;
+    }
+
+    .medias {
+        display: flex;
+
+        li {
+            display: inline;
+            margin-right: 4px;
+            max-width: 44px;
+            max-height: 44px;
+            margin-right: 4px;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin: 24px auto;
+    }
+
 }
+
+
 
 @media screen and (min-width: 370px) and (max-width:870px) {
 
@@ -286,9 +335,9 @@ a {
         margin-top: 64px;
         margin-left: auto;
         margin-right: auto;
+    }
 
-        img {
-            width: 100％;
-        }
+    .about {
+        display: none;
     }
 }
